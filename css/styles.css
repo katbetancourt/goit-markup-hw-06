@@ -331,7 +331,7 @@ opacity: 0.8;
 
 }
 
-.team-icon-link {
+.team-icon-container a {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -341,9 +341,12 @@ opacity: 0.8;
    outline: none;  
 }
 
-.team-icon-link:focus,
-.team-icon-link:hover {
+
+
+.team-icon-container a:focus,
+.team-icon-container a:hover {
    background: var(--brand-primary-blue-color);
+   
 }
 
 
@@ -354,13 +357,13 @@ opacity: 0.8;
    }
 
 
-.team-icons:focus,
-.team-icons:hover {
+.team-icon-container a:focus .team-icons,
+.team-icon-container a:hover .team-icons{
    fill: #ffffff;
 
 }
-   
 
+ 
 
 /*Falta poner el hover de team icons*/
 
@@ -372,6 +375,7 @@ opacity: 0.8;
    width: 100%;
 
 }
+
 .cus-icons {
    display: flex;
    justify-content: center;
@@ -381,7 +385,7 @@ opacity: 0.8;
 
 }
 
-.cus-icons-container {
+.cus-icons-container a {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -391,9 +395,10 @@ opacity: 0.8;
    border-radius: 4px;
 }
 
-.cus-icons-container:focus,
-.cus-icons-container:hover {
+.cus-icons-container a:focus,
+.cus-icons-container a:hover {
    border: 1px solid var(--brand-primary-blue-color);
+   outline: var(--brand-primary-blue-color);
 
 }
 
@@ -403,9 +408,10 @@ opacity: 0.8;
    height: 53px;
 }
 
-.icons:focus,
-.icons:hover {
+.cus-icons-container a:focus .icons,
+.cus-icons-container a:hover .icons {
    fill: var(--brand-primary-blue-color);
+   
 }
 
 
